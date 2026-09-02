@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <h1>Student Dashboard</h1>
+
+    <h2>Welcome Student 👋</h2>
+
+    <div class="card">
+
+        <h3>Available Exam</h3>
+
+        <p>Java Programming</p>
+
+        <p>Total Questions: 5</p>
+
+        <p>Duration: 5 Minutes</p>
+
+        <a href="exam.html">
+            <button>Start Exam</button>
+        </a>
+
+    </div>
+
+    <button onclick="logout()">Logout</button>
+
+</div>
+
+<script>
+
+function logout() {
+
+    localStorage.removeItem("loggedIn");
+
+    window.location.href = "login.html";
+}
+
+</script>
+
+</body>
+</html>
